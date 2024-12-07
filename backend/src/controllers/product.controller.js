@@ -1,4 +1,4 @@
-import { productModel } from "../models/model_licores.js";
+import { productModel } from "../models/product.model.js";
 
 
 
@@ -115,7 +115,7 @@ export const deleteProductById = async (request, response) => {
 
 export const getProductByCategory = async (request, response) => {
     try {
-        const categoryProducts = request.params.categoriadellicor
+        const categoryProducts = request.params.categoria
 
 
         // Usa la funcion find() porque es mas de una coleccion con esa categoria
@@ -125,14 +125,14 @@ export const getProductByCategory = async (request, response) => {
         if (productoEncontrado.length === 0) {
             return response.status(200).json({
                 estado: 400,
-                mensaje: "No se encontraron licores con esa categoría"
+                mensaje: "No se encontraron productos con esa categoría"
             })
         }
 
 
         return response.status(200).json({
             estado: 200,
-            mensaje: "Se encontraron los siguientes licores",
+            mensaje: "Se encontraron los siguientes productos",
             producto: productoEncontrado
         })
 

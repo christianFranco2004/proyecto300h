@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
     fullname: {type:String, required:true},
     email:{type:String, unique:true},
     preference:{type: String,
-        enum:[adultos, niños, cualquiera],
+        enum:["adultos", "niños", "cualquiera"],
         required: false
     },
     password:{type:String, required:true},
