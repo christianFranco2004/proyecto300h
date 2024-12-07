@@ -3,7 +3,9 @@ import { Routes } from '@angular/router';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { AdminComponent } from './paginas/admin/admin.component';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
-import { ProductosComponent } from './paginas/productos/productos.component';
+import { AdultsComponent } from './paginas/productos/adults/adults.component';
+import { ChildComponent } from './paginas/productos/child/child.component';
+
 //rutas hijas
 import { InventariosComponent } from './paginas/admin/inventarios/inventarios.component';
 import { UsuariosComponent } from './paginas/admin/usuarios/usuarios.component';
@@ -17,7 +19,8 @@ import { RegisterUsuarioComponent } from './paginas/registro/register-usuario/re
 export const routes: Routes = [
 {path: '', component: InicioComponent, title: "inicio"},
 
-{path: 'productos', component: ProductosComponent, title: 'productos'},
+{path: 'child', component: ChildComponent, title: 'Child'},
+{path: 'Adult', component: AdultsComponent, title: 'Adult'},
 
 {path: 'administradores', component: LoginAdminComponent, title: 'inicio de sesion de administradores' },
 {path: 'usuarios', component: LoginUsuariosComponent, title: 'inicio de sesion de usuarios' },
