@@ -1,4 +1,4 @@
-import { productModel } from "../models/model_licores.js";
+import { productModel } from "../models/product.model.js";
 
 
 
@@ -35,7 +35,7 @@ export const getProduct = async (request, response) => {
         //que pasa si no hay nada en la base de datos
         if (products.length === 0) {
             return response.status(200).json({
-                mensaje: 'no se encuentraron productos en la base de datos'
+                mensaje: 'no se encontraron productos en la base de datos'
             });
         }
         // si si tiene productos para mostrar:
@@ -115,7 +115,7 @@ export const deleteProductById = async (request, response) => {
 
 export const getProductByCategory = async (request, response) => {
     try {
-        const categoryProducts = request.params.categoriadellicor
+        const categoryProducts = request.params.categoria
 
 
         // Usa la funcion find() porque es mas de una coleccion con esa categoria
@@ -125,14 +125,14 @@ export const getProductByCategory = async (request, response) => {
         if (productoEncontrado.length === 0) {
             return response.status(200).json({
                 estado: 400,
-                mensaje: "No se encontraron licores con esa categoría"
+                mensaje: "No se encontraron productos con esa categoría"
             })
         }
 
 
         return response.status(200).json({
             estado: 200,
-            mensaje: "Se encontraron los siguientes licores",
+            mensaje: "Se encontraron los siguientes productos",
             producto: productoEncontrado
         })
 
