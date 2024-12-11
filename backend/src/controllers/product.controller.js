@@ -35,7 +35,7 @@ export const getProduct = async (request, response) => {
         //que pasa si no hay nada en la base de datos
         if (products.length === 0) {
             return response.status(200).json({
-                mensaje: 'no se encuentraron productos en la base de datos'
+                mensaje: 'no se encontraron productos en la base de datos'
             });
         }
         // si si tiene productos para mostrar:
