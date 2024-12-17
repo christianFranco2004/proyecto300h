@@ -1,52 +1,44 @@
-/* 
-.section__container{
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 5rem 1rem;
+header{
+    width: 100vw;
 }
 
-.section__header{
-    margin-bottom: 1rem;
-    font-size: 2.25rem;
-    font-weight: 600;
-    text-align: center;
-    color: var(--white);
-}
 
-.section__subheader{
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    color: var(--text-light);
-}
-
-.btn{
-    padding: 1rem 2rem;
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    color: var(--white);
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.btn:hover{
-    background-color: var(--primary-color-light);
-}
-img{
-    width: 100%;
+.contenedorBanner{
+    width: 100vw;
+    height: 90vh;
     display: flex;
-}
+    justify-content: center;
+    position: relative;
 
-a{
-    text-decoration: none;
 }
-
-.bg__blur{
+.banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn{
     position: absolute;
-    box-shadow: 0 0 1000px 50px var();
+    font-size: 35px;
+    padding: 10px 30px;
+    bottom: 6%;
+}
+.contenedorTitulo2{
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.Productos{
+    
+    margin: auto;
+    font-size: 25px;
+
 }
 
-
- */
+.contenedorImagen img{
+    width: 100%;
+}
+.tituloPromo{
+    background-color: var(--grisSecundario);
+   
+   
+}
