@@ -19,4 +19,4 @@ productRouter.put('/actualizar/:ID',auth("administrador"), putProductById);
 productRouter.delete('/eliminar/:ID',auth("administrador"),deleteProductById);
 
 //RUTA GET POR CATEGORIA
-productRouter.get('/obtener/:categoriadellicor', getProductByCategory)
+productRouter.get('/obtener/:categoria', getProductByCategory)
