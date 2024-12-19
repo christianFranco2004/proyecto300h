@@ -1,1 +1,42 @@
-<p>register-usuario works!</p>
+<section class="contenedorf">
+    <div class="form-container">
+        <h2>Registrarse</h2>
+    
+        <form action="procesar_formulario.php" method="POST">
+    
+            <!-- Nombre completo -->
+            <label for="nombre-completo">Nombre Completo</label>
+    
+            <input type="text" id="nombre-completo" name="nombre_completo" placeholder="Ingresa tu nombre completo"
+                required>
+    
+    
+            <!-- Email -->
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+    
+            <!-- Preferencia -->
+            <label for="preferencia">Preferencia</label>
+            <select id="preferencia" name="preferencia" required>
+                <option value="">Selecciona una opción</option>
+                <option value="niño">Niño</option>
+                <option value="adulto">Adulto</option>
+            </select>
+    
+            <!-- Contraseña -->
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
+    
+            <!-- Rol -->
+            <label for="rol">Rol</label>
+            <select id="rol" name="rol" required>
+                <option value="">Selecciona un rol</option>
+                <option value="administrador">Administrador</option>
+                <option value="usuario">Usuario</option>
+            </select>
+    
+            <!-- Botón de enviar -->
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+</section>

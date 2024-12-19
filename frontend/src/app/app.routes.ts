@@ -12,7 +12,6 @@ import { UsuariosComponent } from './paginas/admin/usuarios/usuarios.component';
 import { LoginAdminComponent } from './paginas/login/login-admin/login-admin.component';
 import { LoginUsuariosComponent } from './paginas/login/login-usuarios/login-usuarios.component';
 
-import { RegisterAdminComponent } from './paginas/registro/register-admin/register-admin.component';
 import { RegisterUsuarioComponent } from './paginas/registro/register-usuario/register-usuario.component';
 
 
@@ -31,7 +30,6 @@ export const routes: Routes = [
     children:[
         {path: '',component:InventariosComponent , title: 'inventario'},
         {path: 'usuarios', component:UsuariosComponent , title: 'seguimiento de usuarios'},
-        {path: 'registroAdmin', component: RegisterAdminComponent, title: 'registro de administrador' },
     ]
 },
 
