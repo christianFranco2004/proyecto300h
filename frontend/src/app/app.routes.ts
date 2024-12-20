@@ -29,8 +29,8 @@ export const routes: Routes = [
 
 {path: 'admin', component: AdminComponent, title: 'administrador',
     children:[
-        {path: '',component:InventariosComponent , title: 'inventario'},
-        {path: 'usuarios', component:UsuariosComponent , title: 'seguimiento de usuarios'},
+        {path: 'inventario',component:InventariosComponent , title: 'Gestion de Inventario'},
+        {path: '', component:UsuariosComponent , title: 'seguimiento de usuarios'},
         {path: 'registroAdmin', component: RegisterAdminComponent, title: 'registro de administrador' },
     ]
 },
