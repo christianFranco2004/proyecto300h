@@ -1,6 +1,6 @@
 .contenedorformulario {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgb(101, 113, 171);
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,9 +12,11 @@
 .form-container {
     background-color: #fff;
     padding: 20px;
+    height: 350px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
+    
 }
 
 .form-container h2 {
@@ -43,12 +45,12 @@
 }
 
 .form-container input:focus {
-    border-color: #4CAF50;
+    border-color: black;
     outline: none;
 }
 
 .form-container button {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -57,7 +59,8 @@
 }
 
 .form-container button:hover {
-    background-color: #45a049;
+    background-color: #d6d1d0 ;
+    color: black;
 }
 
 .registro-texto {
@@ -73,7 +76,7 @@
 }
 
 .registro-texto a:hover {
-    color: #0056b3;
+    color: #07396e;
     text-decoration: underline;
     cursor: pointer;
 }

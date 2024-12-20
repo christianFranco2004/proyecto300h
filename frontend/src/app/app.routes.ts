@@ -22,7 +22,7 @@ export const routes: Routes = [
     { path: 'child', component: ChildComponent, title: 'Child' },
     { path: 'Adult', component: AdultsComponent, title: 'Adult' },
 
-    { path: 'administradores', component: LoginAdminComponent, title: 'inicio de sesion de administradores' },
+    //{ path: 'administradores', component: LoginAdminComponent, title: 'inicio de sesion de administradores' },
     { path: 'usuarios', component: LoginUsuariosComponent, title: 'inicio de sesion de usuarios' },
 
 
@@ -37,7 +37,7 @@ export const routes: Routes = [
         ]
     },
 
-    { path: '{registroUsuario}', component: RegisterUsuarioComponent, title: 'registro de usuario' },
+    { path: 'registroUsuario', component: RegisterUsuarioComponent, title: 'registro de usuario' },
 
 
     { path: '**', component: NotFoundComponent, title: 'no encontrado' }
