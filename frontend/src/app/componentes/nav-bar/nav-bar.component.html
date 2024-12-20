@@ -1,56 +1,68 @@
-<p>nav-bar ta mela!</p>
-
-
-<!-- 
-<nav>
-    <ul>
-
-        <li><a routerLink="/"> INICIO </a></li>
-        <li><a routerLink="/productos">PRODUCTOS</a></li>
-        <li><a routerLink="/login">INICIAR SESION</a></li>
-        <li><a routerLink="/registro">REGISTRO</a></li>
-        <li><a routerLink="/admin">PANEL DE ADMINISTRACIÓN</a></li>
-    </ul>
-</nav> -->
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
-    </div>
+<nav class="menu">
+  <div class="menu1">
+   <div class="redes">
+    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.whatsapp.com/?lang=es_LA"><i class="bi bi-whatsapp"></i></a>
+   </div>
+   <div class="mensaje">
+    <p>!REINVENTATE CADA DIA!</p>
+   </div>
+   <div class="inicioSesion">
+    <a routerLink="/usuarios">Iniciar Sesion</a>
+   </div>
   </div>
 
+  <div class="menu2">
+    <a routerLink="/">
+      <img class="Logotipo" src="/assets/Logo.png" alt="Logo">
+    </a>
+  </div>
+
+  <div class="menu3">
+    <ul class="Lista">
+      <li>
+        <a  routerLink="/Adult">Adultos</a>
+      </li>
+      <li>
+        <a routerLink="/child">Niños</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg Menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">
+        <img class="Logotipo" src="/assets/Logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav Lista">
+          <li class="nav-item">
+            <a class="nav-link inicio" routerLink="/Adult">Adultos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link inicio" routerLink="/child">Niños</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn boton" routerLink="/usuarios">Iniciar Sesion</a>
+    </div>
+  </nav> -->
