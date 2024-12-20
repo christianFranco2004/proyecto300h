@@ -40,7 +40,7 @@ export class RegisterUsuarioComponent {
     console.log(this.formularioRegistar.value.Role);
 
 
-    let usuariosRegistrar: Usuarios | null = null;
+    /*let usuariosRegistrar: Usuarios | null = null;
 
     if (typeof fullname === "string" && typeof email === "string" && typeof preference === "string" && typeof password === "string" && typeof role === "string") {
 
@@ -70,6 +70,6 @@ export class RegisterUsuarioComponent {
         }
 
       });
-    }
+    }*/
   }
 }
