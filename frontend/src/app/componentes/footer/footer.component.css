@@ -1,0 +1,73 @@
+/* Estilos generales para el footer */
+.footer {
+    background-color:var(--grisSecundario);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo img {
+    width: 170px;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #f39c12;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-social .social-icon {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social .social-icon:hover {
+    color: #f39c12;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Agregar un efecto de sombra suave */
+  .footer {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
