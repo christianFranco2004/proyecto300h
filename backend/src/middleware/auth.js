@@ -13,6 +13,8 @@ function auth(requiredRole) {
         // VERIFICACIÓN 1: Existencia del token -------------------------
         // Acá estamos accediendo al token generado en caso de que haya
         let token = request.headers['authorization'];
+
+        
         console.log('Token obtenido de la cabecera ' + token);
 
         if(!token){
@@ -37,7 +39,7 @@ function auth(requiredRole) {
             // SI se requiere que se administrador -> requiredRole === 'admin'
             // PERO el usuario NO ES administrador 
             // MENSAJE DE QUE NO TIENE PERMISOS PARA ESA PETICIÓN
-            if(requiredRole === 'administrador' && !decoded.isAdmin){
+            if(requiredRole === 'admin' && !decoded.isAdmin){
                 // 403 -> Prohibido continuar
                 return response.status(403).json({
                     mensaje: 'Acceso no permitido, no es administrador'
