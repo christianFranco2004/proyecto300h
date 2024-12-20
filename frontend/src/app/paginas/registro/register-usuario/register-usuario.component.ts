@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormGroup, FormsModule, FormControl } from '@angular/forms';
 import { Usuarios } from '../../../interfaces/usuarios';
 import { UsuariosService } from '../../../services/usuarios.service';
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-usuario',
-  imports: [RouterLink, FormsModule,ReactiveFormsModule],
+  imports: [ FormsModule,ReactiveFormsModule],
   templateUrl: './register-usuario.component.html',
   styleUrl: './register-usuario.component.css'
 })

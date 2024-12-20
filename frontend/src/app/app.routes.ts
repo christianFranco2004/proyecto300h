@@ -26,16 +26,12 @@ export const routes: Routes = [
     { path: 'usuarios', component: LoginUsuariosComponent, title: 'inicio de sesion de usuarios' },
 
 
-<<<<<<< HEAD
-=======
 {path: 'admin', component: AdminComponent, title: 'administrador',
     children:[
         {path: 'inventario',component:InventariosComponent , title: 'Gestion de Inventario'},
         {path: '', component:UsuariosComponent , title: 'seguimiento de usuarios'},
-        {path: 'registroAdmin', component: RegisterAdminComponent, title: 'registro de administrador' },
     ]
 },
->>>>>>> Sebastian
 
     {
         path: 'admin', component: AdminComponent, title: 'administrador',
