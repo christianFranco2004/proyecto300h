@@ -40,5 +40,5 @@ export const routes: Routes = [
     { path: 'registroUsuario', component: RegisterUsuarioComponent, title: 'registro de usuario' },
 
 
-    { path: 'notFound', component: NotFoundComponent, title: 'no encontrado' }
+    { path: '**', component: NotFoundComponent, title: 'no encontrado' }
 ];

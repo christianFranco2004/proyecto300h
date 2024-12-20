@@ -5,7 +5,7 @@ import { Usuarios } from '../../../interfaces/usuarios';
 import { UsuariosService } from '../../../services/usuarios.service';
 import { ToastrService } from 'ngx-toastr';
 import { inject } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-usuario',
@@ -17,7 +17,7 @@ export class RegisterUsuarioComponent {
   // 1. injeccion de variables
   _usuariosService = inject(UsuariosService);
   _toastrService = inject(ToastrService);
-
+_router= inject(Router);
 
   formularioRegistar = new FormGroup({
     Fullname: new FormControl(''),
@@ -40,7 +40,7 @@ export class RegisterUsuarioComponent {
     console.log(this.formularioRegistar.value.Role);
 
 
-    /*let usuariosRegistrar: Usuarios | null = null;
+    let usuariosRegistrar: Usuarios | null = null;
 
     if (typeof fullname === "string" && typeof email === "string" && typeof preference === "string" && typeof password === "string" && typeof role === "string") {
 
@@ -53,13 +53,14 @@ export class RegisterUsuarioComponent {
       }
     }
 
+
     if (usuariosRegistrar) {
       this._usuariosService.postUsuarios(usuariosRegistrar).subscribe({
         next: (res: any) => {
-          console.log(res);
           if (res) {
             console.log(res);
-            this._usuariosService.getUsuarios();
+           this._toastrService.success("usuario creado sactifactoriamente");
+           this._router.navigate(["/usuarios"]);
           } else {
             console.error('Hubo un error');
           }
@@ -70,6 +71,6 @@ export class RegisterUsuarioComponent {
         }
 
       });
-    }*/
+    }
   }
 }
