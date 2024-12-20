@@ -17,7 +17,7 @@ export class LoginService {
   public _toastrService = inject(ToastrService);
 
   //2. ruta de conexion con el backend------------------------------
-  private URL_LOGIN = "http://localhost:6000/iniciarSesion";
+  private URL_LOGIN = "http://localhost:3000/iniciarSesion";
 
   //3.INICIAR SESION(PETICION POST)------------------------------
   inicioSesion(credencialesIngreso: Credenciales) {
@@ -42,10 +42,10 @@ export class LoginService {
     }
   }
   redireccionar() {
-    if (this.isAdmin()) {
+    if (!this.isAdmin()) {
       this._router.navigate(["/"]);
     } else {
-
+      this._router.navigate(["/admin"]);
     }
   }
   //6. SE INICIO SACTIFACTORIAMENTE O NO SESION------------------------------

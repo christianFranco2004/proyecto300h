@@ -13,7 +13,7 @@ export class ProductosService {
   private _httpClient = inject(HttpClient);
 
   //2. ruta de conexion con el backend------------------------------
-  private URL_PRODUCTOS = "http://localhost:6000/productos";
+  private URL_PRODUCTOS = "http://localhost:3000/productos";
 
   //3. hacer las peticiones-------------------------
 
