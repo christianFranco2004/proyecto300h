@@ -1,10 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
 import { connectionMongo } from "./src/config/dataBase.js";
-import { productRouter } from "./src/ROUTES/product.routes.js";
+import { productRouter } from "./src/routes/product.routes.js";
 import { orderRouter } from "./src/routes/order.routes.js";
-import { usersRouter } from "./src/ROUTES/user.routes.js";
-import loginRouter from "./src/ROUTES/login.routes.js";
+import { usersRouter } from "./src/routes/user.routes.js";
+import loginRouter from "./src/routes/login.routes.js";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
