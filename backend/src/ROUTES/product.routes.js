@@ -1,8 +1,8 @@
 import { getProduct, postProduct, deleteProductById, putProductById, getProductByCategory } from "../controllers/product.controller.js";
 import express from "express";
 import auth from "../middleware/auth.js";
-import { productRouter } from "./src/routes/product.routes.js";
 
+const productRouter= express.Router();
 
 
 //RUTA GET
@@ -21,4 +21,4 @@ productRouter.delete('/eliminar/:ID',auth("administrador"),deleteProductById);
 //RUTA GET POR CATEGORIA
 productRouter.get('/obtener/:categoria', getProductByCategory)
 
-export { router as productRouter };
+export default productRouter
