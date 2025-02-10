@@ -1,4 +1,4 @@
-import { productRouter } from "./src/ROUTES/product.routes.js";
+
 import { getProduct, postProduct, deleteProductById, putProductById, getProductByCategory } from "../controllers/product.controller.js";
 import express from "express";
 import auth from "../middleware/auth.js";
