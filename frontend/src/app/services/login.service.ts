@@ -17,7 +17,7 @@ export class LoginService {
   public _toastrService = inject(ToastrService);
 
   //2. ruta de conexion con el backend------------------------------
-  private URL_LOGIN = "http://localhost:3000/iniciarSesion";
+  private URL_LOGIN = "http://143.198.138.87:3000/iniciarSesion";
 
   //3.INICIAR SESION(PETICION POST)------------------------------
   inicioSesion(credencialesIngreso: Credenciales) {

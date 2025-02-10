@@ -12,7 +12,7 @@ export class UsuariosService {
   private _httpClient = inject(HttpClient);
 
   //2. ruta de conexion con el backend------------------------------
-  private  URL_USUARIOS = "http://localhost:3000/usuarios";
+  private  URL_USUARIOS = "http://143.198.138.87:3000/usuarios";
 
   //3. hacer las peticiones---------------------
 
