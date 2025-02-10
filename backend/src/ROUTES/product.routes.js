@@ -3,7 +3,7 @@ import express from "express";
 import auth from "../middleware/auth.js";
 import { productRouter } from "./src/routes/product.routes.js";
 
-export const productRouter = express.Router();
+
 
 //RUTA GET
 productRouter.get('/obtener', getProduct);
@@ -20,3 +20,5 @@ productRouter.delete('/eliminar/:ID',auth("administrador"),deleteProductById);
 
 //RUTA GET POR CATEGORIA
 productRouter.get('/obtener/:categoria', getProductByCategory)
+
+export { router as productRouter };
