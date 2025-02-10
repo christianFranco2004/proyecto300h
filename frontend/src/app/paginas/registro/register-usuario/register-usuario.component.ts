@@ -4,11 +4,11 @@ import { Usuarios } from '../../../interfaces/usuarios';
 import { UsuariosService } from '../../../services/usuarios.service';
 import { ToastrService } from 'ngx-toastr';
 import { inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-register-usuario',
-  imports: [ FormsModule,ReactiveFormsModule],
+  imports: [ FormsModule,ReactiveFormsModule, RouterLink],
   templateUrl: './register-usuario.component.html',
   styleUrl: './register-usuario.component.css'
 })

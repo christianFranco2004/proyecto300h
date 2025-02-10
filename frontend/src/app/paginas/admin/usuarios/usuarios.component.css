@@ -56,12 +56,13 @@
     background-color: #121212;
   }
   .btn-signout{
-    background-color: var(--grisPrincipal);
+    background-color: var(--texto);
     color: white;
   }
   .btn-signout:hover{
     background-color:var(--texto);
   }
+  
   
   .content {
     margin-left: 250px;
@@ -106,7 +107,7 @@
     margin-top: 20px;
   }
   
-  .user-card {
+  /* .user-card {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -146,5 +147,70 @@
   
   .btn-delete:hover {
     background-color: var(--blanco);
+  } */
+  .card-container {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+    padding: 20px;
   }
-   
+  
+  .card {
+    width: 18rem;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .card-link {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .card-link:hover {
+    color: #0056b3;
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  
+  
+
+  
+    
+    
+    

@@ -1,7 +1,7 @@
 <h1>🏃‍♂️ Ecommerce de Zapatos Deportivos - URBANFOOT 👟</h1>  
 
 <hr>
-<p>¡Bienvenido a [Nombre de tu Empresa], tu tienda en línea de confianza para zapatos deportivos de alta calidad! 🛒👟
+<p>¡Bienvenidos a URBANFOOT, tu tienda en línea de confianza para zapatos deportivos de alta calidad! 🛒👟
 En este ecommerce, ofrecemos una experiencia de compra fácil y rápida, con un catálogo diverso de productos pensados para todos los amantes del deporte y el estilo. ¡Corre, salta y entrena con los mejores zapatos!</p>
 
 <hr>

@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-inventarios',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './inventarios.component.html',
   styleUrl: './inventarios.component.css'
 })
@@ -38,75 +38,78 @@ export class InventariosComponent {
       }
     });
   }
-
-  crearDatos() {
-    if (this.name === '' || this.image === '' || this.price === 0) {
-      alert('Ponga todos los campos');
-    } else {
-      const nuevoProducto: Productos = {
-        name: this.name,
-        Image: this.image,
-        price: this.price,
-        tallas: this.tallas
-      };
-      this._dataService.getProducto().subscribe({
-        next: (res: any) => {
-          if (res) {
-            console.log('res', res);
-            this.obtenerDatos();
-          } else {
-            console.error('Hay un error');
-          }
-        },
-        error: (err) => {
-          console.error('Hay un error', err);
-        }
-      });
-    }
-  }
-
-  // identificarId(id: string | undefined) {
-  //   this.editProductId = id;
-  //   this.editMode = true;
-  //   this.showdiv = true;
-  //   console.log(this.editProductId);
+  // ngOnInit() {
+  //   this.obtenerDatos()
   // }
 
-  // modificarProducto() {
-  //   console.log('Entre');
-  //   console.log(this.editProductId, this.name, this.image, this.price);
-  //   if (!this.name || !this.image || this.price <= 0) {
-  //     alert('Ingrese todos los campos');
-  //   } else if (this.editProductId) {
-  //     const productoActualizado: Productos = {
-  //       name: this.name,
-  //       Image: this.image,
-  //       price: this.price,
-  //       tallas: this.tallas
-  //     };
-  //     this._dataService.putProducto(this.editProductId, productoActualizado).subscribe({
-  //       next: (res: any) => {
-  //         if (res) {
-  //           console.log('res', res);
-  //           this.obtenerDatos();
-  //         } else {
-  //           console.error('Hubo un error');
-  //         }
-  //       },
-  //       error: (err) => {
-  //         console.error('Hubo un error', err);
-  //       }
-  //     });
-  //   }
-  // }
+//   crearDatos() {
+//     if (this.name === '' || this.image === '' || this.price === 0) {
+//       alert('Ponga todos los campos');
+//     } else {
+//       const nuevoProducto: Productos = {
+//         name: this.name,
+//         Image: this.image,
+//         price: this.price,
+//         tallas: this.tallas
+//       };
+//       this._dataService.getProducto().subscribe({
+//         next: (res: any) => {
+//           if (res) {
+//             console.log('res', res);
+//             this.obtenerDatos();
+//           } else {
+//             console.error('Hay un error');
+//           }
+//         },
+//         error: (err) => {
+//           console.error('Hay un error', err);
+//         }
+//       });
+//     }
+//   }
 
-  // borrarProducto(id: string | undefined) {
-  //   console.log('Producto que se borrara:', id);
+//   identificarId(id: string | undefined) {
+//     this.editProductId = id;
+//     this.editMode = true;
+//     this.showdiv = true;
+//     console.log(this.editProductId);
+//   }
 
-  //   this._dataService.deleteProduct(id).subscribe({
+//   modificarProducto() {
+//     console.log('Entre');
+//     console.log(this.editProductId, this.name, this.image, this.price);
+//     if (!this.name || !this.image || this.price <= 0) {
+//       alert('Ingrese todos los campos');
+//     } else if (this.editProductId) {
+//       const productoActualizado: Productos = {
+//         name: this.name,
+//         Image: this.image,
+//         price: this.price,
+//         tallas: this.tallas
+//       };
+//       this._dataService.putProducto(this.editProductId, productoActualizado).subscribe({
+//         next: (res: any) => {
+//           if (res) {
+//             console.log('res', res);
+//             this.obtenerDatos();
+//           } else {
+//             console.error('Hubo un error');
+//           }
+//         },
+//         error: (err) => {
+//           console.error('Hubo un error', err);
+//         }
+//       });
+//     }
+//   }
 
-  //   })
-  // }
+//   borrarProducto(id: string | undefined) {
+//     console.log('Producto que se borrara:', id);
+
+//     this._dataService.deleteProduct(id).subscribe({
+
+//     })
+//   }
 
 }
 

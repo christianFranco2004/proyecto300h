@@ -56,7 +56,7 @@
     background-color: #121212;
   }
   .btn-signout{
-    background-color: var(--grisPrincipal);
+    background-color: var(--texto);
     color: white;
   }
   .btn-signout:hover{
@@ -102,56 +102,6 @@
     background-color: var(--texto);
   }
 
-  
-  
-  /* .user-list {
-    margin-top: 20px;
-  }
-  
-  .user-card {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .user-actions {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-    
-  }
-  
-  .btn-edit, .btn-delete {
-    padding: 10px 15px;
-    font-size: 14px;
-    margin-right: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-edit {
-    background-color: var(--grisPrincipal);
-    color: white;
-  }
-  
-  .btn-edit:hover {
-    background-color: var(--texto);
-  }
-  
-  .btn-delete {
-    background-color: var(--texto);
-    color: white;
-  }
-  
-  .btn-delete:hover {
-    background-color: var(--blanco);
-  } */
-      
-      /* Estilos generales para la tarjeta */
 .card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
